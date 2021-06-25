@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background"></div>
+    <div class="music-player">
+        <audio src="Musics/so cold.mp3" id="audio" controls></audio>
+        <div class="header">
+            <div class="image">
+                <img src="Image/so cold.jpg">
+            </div>
+            <div class="information">
+                <div class="system">windows</div>
+                <div class="song-name">so cold</div>
+                <div class="singers">post malone</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="player">
+            <div class="time-line">
+                <div class="background"></div>
+                <div class="fill" id="fill"></div>
+                <div class="fill-btn" id="fill-btn"></div>
+            </div>
+            <div class="under-time-line">
+                <span id="time-past">0:00</span>
+                <span id="time-left">-0:00</span>
+            </div>
+            <div class="buttons">
+                <button class="btn">
+                    <img src="Image/next and back.png" style="transform: rotateY(180deg);" id="back-btn">
+                </button>
+                <button class="btn">
+                    <img src="Image/play icon.png" id="play-pause-btn" onclick="play_and_pause()">
+                </button>
+                <button class="btn">
+                    <img src="Image/next and back.png" id="next-btn">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
